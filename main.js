@@ -1,4 +1,6 @@
 import App from './App'
+import './utils/utils.js'
+import { globalRegister } from './global'
 
 // #ifndef VUE3
 import Vue from 'vue'
@@ -15,6 +17,8 @@ app.$mount()
 import { createSSRApp } from 'vue'
 export function createApp() {
   const app = createSSRApp(App)
+  // 全局统一注册
+  app.use(globalRegister)
   return {
     app
   }
