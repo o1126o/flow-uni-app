@@ -84,5 +84,14 @@
       }
     ]
   },
+  "subPackages": [{
+    "root": "subpkg_user",
+    "pages": [{
+      "path": "truck/index",
+      "style": {
+        "navigationBarTitleText": "车辆信息"
+      }
+    }]
+  }],
   "uniIdRouter": {}
 }

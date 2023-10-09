@@ -1,0 +1,44 @@
+.login {
+  box-sizing: border-box;
+  padding: 0 66rpx;
+  &-top {
+    margin: 18rpx 240rpx 100rpx;
+    .title {
+      width: 144rpx;
+      height: 50rpx;
+      font-weight: 600;
+      font-size: 36rpx;
+      color: #2A2929;
+      letter-spacing: 0;
+    }
+  }
+  &-head {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 90rpx !important;
+    .headBig {
+      width: 240rpx;
+      height: 66rpx;
+      font-weight: 600;
+      font-size: 48rpx;
+      color: #2A2929;
+      letter-spacing: 0;
+    }
+    .headMini {
+      color: #EF4F3F;
+      .type {
+        width: 128rpx;
+        height: 44rpx;
+        font-weight: 500;
+        letter-spacing: 0;
+        text-align: right;
+      }
+      .icon-caret {
+        font-size: 50%;
+        margin-left: 14rpx;
+      }
+    }
+  }
+}

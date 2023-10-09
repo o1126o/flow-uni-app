@@ -1,0 +1,34 @@
+.truck {
+  /* #ifdef H5 */
+  height: calc(100vh - 50px);
+  background-color: #f4f4f4;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+  &-info {
+    width: 690rpx;
+    height: 402rpx;
+    background-color: #ffffff;
+    border-radius: 20rpx;
+    padding: 40rpx 40rpx;
+    box-sizing: border-box;
+    .item {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      height: 40rpx;
+      margin-bottom: 28rpx;
+      .left-text {
+        font-weight: 400;
+        font-size: 28rpx;
+        color: #818181;
+        letter-spacing: 0.32rpx;
+      }
+      .right-text {
+        font-weight: 400;
+        font-size: 28rpx;
+        color: #2a2929;
+        letter-spacing: 0.32rpx;
+      }
+    }
+  }
+}
