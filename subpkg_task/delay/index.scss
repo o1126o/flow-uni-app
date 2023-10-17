@@ -1,0 +1,82 @@
+.delay-page {
+  display: flex;
+  flex-direction: column;
+  background-color: $uni-bg-color;
+  height: calc(100vh - 44px);
+  box-sizing: border-box;
+  padding: 30rpx 30rpx env(safe-area-inset-bottom);
+}
+
+::v-deep .uni-list {
+  border-radius: 16rpx;
+  overflow: hidden;
+  padding: 0 30rpx;
+}
+
+::v-deep .uni-list-item__content-title {
+  font-weight: 400;
+  font-size: 28rpx;
+  color: #2a2929;
+}
+
+::v-deep .uni-list-item__extra-text,
+.timeText {
+  font-weight: 400;
+  font-size: 28rpx;
+  color: #818181;
+}
+
+::v-deep .uni-list-item__container {
+  padding: 35rpx 0;
+}
+
+::v-deep .uni-icon-wrapper {
+  font-size: 40rpx !important;
+  padding: 0;
+}
+
+.textarea-wrapper {
+  width: 630rpx;
+  height: 260rpx;
+  background: #f4f4f4;
+  border-radius: 16rpx;
+  padding: 22rpx 28rpx;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.uni-textarea-placeholder {
+  font-weight: 400;
+  font-size: 28rpx;
+  color: #2a2929 !important;
+}
+.words-count {
+  position: absolute;
+  bottom: 20rpx;
+  right: 30rpx;
+  font-weight: 400;
+  font-size: 28rpx;
+  color: #818181;
+}
+
+.button {
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  /* #ifdef APP */
+  padding-top: 4rpx;
+  /* #endif */
+  margin: -20rpx auto 20rpx;
+  color: #fff;
+  font-size: $uni-font-size-big;
+  border-radius: 100rpx;
+  background-color: #EF4F3F;
+
+  &[disabled] {
+    background-color: #fadcd9;
+  }
+}
+
+.error {
+  color: #EF4F3F;
+}

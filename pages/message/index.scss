@@ -1,0 +1,46 @@
+.message {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 94px);
+  background-color: $uni-bg-color;
+  &-tabbar {
+    display: flex;
+    .tab-item {
+      height: 88rpx;
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #fff;
+      flex-direction: column;
+
+      .title {
+        font-size: 28rpx;
+        color: #818181;
+        position: relative;
+        &.active {
+          color: $uni-main-color;
+          font-weight: 500;
+          position: relative;
+
+          &::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: -20rpx;
+            width: 46rpx;
+            height: 8rpx;
+            border-radius: 8rpx;
+            transform: translate(-50%);
+            background-image: linear-gradient(210deg, #f25c4d 25%, #e52d21 100%, #e52d21 100%);
+          }
+        }
+      }
+    }
+  }
+}
+
+.message-list {
+	flex: 1;
+	overflow: hidden;
+}

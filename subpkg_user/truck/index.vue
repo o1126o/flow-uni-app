@@ -4,11 +4,11 @@ import { onLoad } from '@dcloudio/uni-app';
 import { userTruck } from '@/api/user.js';
 
 // 车辆信息
-const userTruckInfo = ref({})
+const userTruckInfo = ref({});
 
 onLoad(() => {
-  getTruckInfo()
-})
+  getTruckInfo();
+});
 
 // 车辆信息接口
 const getTruckInfo = async () => {
@@ -20,10 +20,17 @@ const getTruckInfo = async () => {
   } catch (err) {
     console.log(err);
   }
-}
+};
 </script>
 <template>
   <view class="truck">
+    <view class="truck-img">
+      <swiper class="swiper">
+        <swiper-item v-for="i in userTruckInfo.pictureList">
+          <image :src="i.url" mode=""></image>
+        </swiper-item>
+      </swiper>
+    </view>
     <view class="truck-info">
       <view class="item">
         <text class="left-text">车辆编号</text>

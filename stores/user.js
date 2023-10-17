@@ -6,7 +6,11 @@ export const useUserStore = defineStore(
 	() => {
 		const token = ref('');
     
-    return { token };
+    const loyout = () => {
+      token.value = ''
+    }
+    
+    return { token, loyout };
 	},
 	{
 		persist: true

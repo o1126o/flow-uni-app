@@ -1,0 +1,56 @@
+{
+  "description": "项目配置文件。",
+  "packOptions": {
+    "ignore": [],
+    "include": []
+  },
+  "setting": {
+    "urlCheck": false,
+    "es6": true,
+    "postcss": false,
+    "minified": false,
+    "newFeature": true,
+    "bigPackageSizeSupport": true,
+    "packNpmRelationList": [],
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "condition": false
+  },
+  "compileType": "miniprogram",
+  "libVersion": "3.1.2",
+  "appid": "wx94b0a17625a5727b",
+  "projectname": "uni-flow",
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "任务",
+          "pathName": "pages/task/index",
+          "query": ""
+        },
+        {
+          "name": "消息",
+          "pathName": "pages/message/index",
+          "query": ""
+        },
+        {
+          "name": "我的",
+          "pathName": "pages/my/index",
+          "query": ""
+        },
+        {
+          "name": "登录",
+          "pathName": "pages/login/index",
+          "query": ""
+        }
+      ]
+    }
+  },
+  "editorSetting": {
+    "tabIndent": "insertSpaces",
+    "tabSize": 2
+  }
+}

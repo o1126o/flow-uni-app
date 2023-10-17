@@ -2,13 +2,24 @@
 import { ref } from 'vue';
 import { login } from '@/api/user.js';
 import { useUserStore } from '@/stores/user.js';
+import { onLoad } from '@dcloudio/uni-app';
 
 const store = useUserStore();
 const accountForm = ref();
 
+// 回调地址
+const redirectUrl = ref('');
+// 跳转地址方式
+const routeType = ref('');
+
 const formData = ref({
   account: '',
   password: ''
+});
+
+onLoad((e) => {
+  redirectUrl.value = e.redirectUrl;
+  routeType.value = e.routeType;
 });
 
 const accountRules = ref({
@@ -38,7 +49,6 @@ const accountRules = ref({
   }
 });
 
-
 // 登录
 const submitForm = async () => {
   try {
@@ -48,8 +58,16 @@ const submitForm = async () => {
     const res = await login(formData);
     // 存储token
     store.token = res.data;
-
-
+    // 地址重定向或switchTab
+    if (routeType.value === 'switchTab') {
+      uni.switchTab({ url: redirectUrl.value });
+    } else if (routeType.value === 'redirectTo') {
+      uni.redirectTo({ url: redirectUrl.value });
+    } else {
+      uni.switchTab({
+        url: '/pages/my/index'
+      });
+    }
   } catch (e) {
     // 验证失败
     console.log('e', e);
@@ -88,16 +106,16 @@ const clearIcon = () => {
   height: 100rpx;
   line-height: 100rpx;
   border: none;
-  background: #ef4f3f;
+  background: $uni-main-color;
   border-radius: 49.54rpx;
   margin-top: 80rpx;
-  font-size: 36rpx;
-  color: #fff;
+  font-size: $uni-font-size-big;
+  color: $uni-white-color;
 }
 .uni-forms-item {
   height: 100rpx;
   margin-bottom: 20 !important;
-  border-bottom: 2rpx solid #eee;
+  border-bottom: 2rpx solid $uni-divider-color;
   box-sizing: border-box;
 
   ::v-deep .uni-forms-item__content {
@@ -107,21 +125,21 @@ const clearIcon = () => {
 
   ::v-deep input {
     width: 100%;
-    font-size: 32rpx;
-    color: #818181;
+    font-size: $uni-font-size-base;
+    color: $uni-secondary-text-color;
   }
 }
 ::v-deep .uni-forms-item__error {
   width: 100%;
   padding-top: 10rpx;
-  border-top: 2rpx solid #ef4f3f;
-  color: ef4f3f;
-  font-size: 28rpx;
+  border-top: 2rpx solid $uni-main-color;
+  color: $uni-main-color;
+  font-size: $uni-font-size-small;
   transition: none;
 }
 
 .disabled {
   background-color: #fadcd9;
-  color: #ffffff;
+  color: $uni-white-color;
 }
 </style>

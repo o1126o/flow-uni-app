@@ -27,28 +27,29 @@
     {
       "path": "pages/task/index",
       "style": {
-        "navigationBarTitleText": "",
+        "navigationStyle": "custom",
         "enablePullDownRefresh": false
       }
     },
     {
       "path": "pages/login/index",
       "style": {
-        "navigationBarTitleText": "",
+        "navigationStyle": "custom",
         "enablePullDownRefresh": false
       }
     },
     {
       "path": "pages/message/index",
       "style": {
-        "navigationBarTitleText": "",
+        "navigationBarTitleText": "消息 ",
         "enablePullDownRefresh": false
       }
     },
     {
       "path": "pages/my/index",
       "style": {
-        "navigationBarTitleText": "",
+        // "navigationBarTitleText": "我的",
+        "navigationStyle": "custom",
         "enablePullDownRefresh": false
       }
     }
@@ -85,13 +86,83 @@
     ]
   },
   "subPackages": [{
-    "root": "subpkg_user",
-    "pages": [{
-      "path": "truck/index",
-      "style": {
-        "navigationBarTitleText": "车辆信息"
-      }
-    }]
-  }],
+      "root": "subpkg_user",
+      "pages": [{
+          "path": "truck/index",
+          "style": {
+            "navigationBarTitleText": "车辆信息"
+          }
+        },{
+          "path": "task/index",
+          "style": {
+            "navigationBarTitleText": "任务数据"
+          }
+        },{
+          "path": "settings/index",
+          "style": {
+            "navigationBarTitleText": "系统设置"
+          }
+        },{
+          "path": "notify/index",
+          "style": {
+            "navigationBarTitleText": "开启通知设置"
+          }
+        },{
+          "path": "mobile/index",
+          "style": {
+            "navigationBarTitleText": "换绑手机"
+          }
+        },{
+          "path": "password/index",
+          "style": {
+            "navigationBarTitleText": "修改密码"
+          }
+        }
+      ]
+    },
+    {
+      "root": "subpkg_message",
+      "pages": [{
+        "path": "content/index",
+        "style": {
+          "navigationBarTitleText": "详情"
+        }
+      }]
+    },
+    {
+      "root": "subpkg_task",
+      "pages": [{
+        "path": "detail/index",
+        "style": {
+          "navigationBarTitleText": "任务详情"
+        }
+      },{
+        "path": "delay/index",
+        "style": {
+          "navigationBarTitleText": "延迟提货"
+        }
+      },{
+        "path": "pickup/index",
+        "style": {
+          "navigationBarTitleText": "提货信息"
+        }
+      },{
+        "path": "delivery/index",
+        "style": {
+          "navigationBarTitleText": "交货信息"
+        }
+      },{
+        "path": "record/index",
+        "style": {
+          "navigationBarTitleText": "回车登记"
+        }
+      },{
+        "path": "except/index",
+        "style": {
+          "navigationBarTitleText": "上传异常"
+        }
+      }]
+    }
+  ],
   "uniIdRouter": {}
 }

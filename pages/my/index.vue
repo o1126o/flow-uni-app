@@ -28,7 +28,7 @@ const getUserProfile = async () => {
 // 任务数据
 const getTaskInfo = async () => {
   try {
-    const res = await userTask('2023', '07');
+    const res = await userTask('2023', '10');
     // 渲染请求来的数据
     taskInfo.value = res.data;
   } catch (err) {
@@ -46,14 +46,14 @@ const getTaskInfo = async () => {
       <text class="mobile">手机号码：{{ userProfile.phone }}</text>
     </view>
     <view class="month-overview">
-      <view class="title">我的任务</view>
+      <view class="title">本月任务</view>
       <view class="content">
         <view class="item">
-          <text class="volumn">{{ taskInfo.completedAmounts }}</text>
+          <text class="volumn">{{ taskInfo.taskAmounts }}</text>
           <text class="label">任务总量</text>
         </view>
         <view class="item">
-          <text class="volumn">{{ taskInfo.taskAmounts }}</text>
+          <text class="volumn">{{ taskInfo.completedAmounts }}</text>
           <text class="label">完成任务量</text>
         </view>
         <view class="item">

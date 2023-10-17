@@ -1,0 +1,1 @@
+import{u as r}from"./uni-fetch.281d61b3.js";const s=s=>{if(s.account&&s.password)return r.post("/driver/login/account",s)},e=()=>r.get("/driver/users"),t=(s,e)=>r.get("/driver/users/taskReport",{year:s,month:e}),a=()=>r.get("/driver/users/truck");export{t as a,a as b,s as l,e as u};

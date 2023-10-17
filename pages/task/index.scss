@@ -1,0 +1,47 @@
+.page-container {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 50px);
+  background-color: $uni-bg-color;
+  .tab {
+    display: flex;
+    background-color: $uni-white-color;
+    font-size: 36rpx;
+    padding: calc(env(safe-area-inset-top) + 13px) 60rpx 0;
+    &-item {
+      height: 88rpx;
+      margin-right: 80rpx;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      .title {
+        color: $uni-secondary-text-color;
+        position: relative;
+        &.active {
+          color: $uni-main-text-color;
+          font-weight: 500;
+          &::after {
+            content: '';
+            display: block;
+            width: 46rpx;
+            height: 8rpx;
+            background: #d8d8d8;
+            background-image: linear-gradient(210deg, #f25c4d 25%, #e52d21 100%, #e52d21 100%);
+            border-radius: 20rpx;
+            border-radius: 4rpx;
+            position: absolute;
+            left: 50%;
+            bottom: -24rpx;
+            transform: translate(-50%);
+          }
+        }
+      }
+    }
+  }
+}
+
+.message-list {
+	flex: 1;
+	overflow: hidden;
+}

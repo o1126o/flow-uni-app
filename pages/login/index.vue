@@ -27,7 +27,7 @@ const changeLoginType = () => {
 <template>
   <view class="login">
     <view class="login-top">
-      <view class="title">神领快递</view>
+      <!-- <view class="title">神领快递</view> -->
     </view>
 
     <view class="login-head">

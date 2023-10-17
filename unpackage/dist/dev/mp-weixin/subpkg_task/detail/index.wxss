@@ -1,0 +1,255 @@
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+/* 主色 */
+/* 辅助色 */
+/* 中性色 */
+.page-container.data-v-1a9e4efd {
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f4f4;
+  height: calc(100vh - 44px);
+}
+.search-bar.data-v-1a9e4efd {
+  position: relative;
+  padding: 30rpx;
+  background-color: #fff;
+  border-bottom: 1rpx solid #eee;
+}
+.search-bar .icon-scan.data-v-1a9e4efd,
+.search-bar .icon-search.data-v-1a9e4efd {
+  position: absolute;
+  top: 50%;
+  left: 40rpx;
+  padding: 20rpx;
+  font-weight: 600;
+  transform: translateY(-50%);
+  color: #818181;
+  font-size: 32rpx;
+}
+.search-bar .input.data-v-1a9e4efd {
+  height: 64rpx;
+  background-color: #f4f4f4;
+  border-radius: 64rpx;
+  padding-left: 80rpx;
+  font-size: 28rpx;
+}
+.task-detail.data-v-1a9e4efd {
+  flex: 1;
+  overflow: hidden;
+}
+.task-detail .panel.data-v-1a9e4efd {
+  padding: 30rpx 30rpx 20rpx;
+  margin: 30rpx;
+  border-radius: 16rpx;
+  background-color: #fff;
+}
+.task-detail .head.data-v-1a9e4efd {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30rpx;
+}
+.task-detail .panel-title.data-v-1a9e4efd {
+  font-size: 32rpx;
+  color: #2a2929;
+}
+.task-detail .iconfont.data-v-1a9e4efd {
+  color: #ef4f3f;
+}
+.task-detail .info-list.data-v-1a9e4efd {
+  padding: 20rpx 10rpx 0;
+  margin-top: 40rpx;
+  border-top: 2rpx solid #f4f4f4;
+}
+.task-detail .info-list-item.data-v-1a9e4efd {
+  display: flex;
+  justify-content: space-between;
+  line-height: 1;
+  padding: 20rpx 0;
+  font-size: 28rpx;
+}
+.task-detail .info-list-item .label.data-v-1a9e4efd {
+  color: #818181;
+}
+.task-detail .info-list-item .value.data-v-1a9e4efd {
+  color: #2a2929;
+}
+.basic-info .hr.data-v-1a9e4efd {
+  border-top: 1rpx solid #f4f4f4;
+  margin: 20rpx 0;
+}
+.basic-info .timeline.data-v-1a9e4efd {
+  min-height: 110rpx;
+  position: relative;
+  padding: 0 145rpx 0 35rpx;
+  margin-left: 30rpx;
+  border-left: 2rpx dashed #ef4f3f;
+}
+.basic-info .timeline.data-v-1a9e4efd::before, .basic-info .timeline.data-v-1a9e4efd::after {
+  position: absolute;
+  left: -24rpx;
+  width: 44rpx;
+  height: 44rpx;
+  text-align: center;
+  line-height: 44rpx;
+  font-size: 22rpx;
+  color: #fff;
+  border-radius: 50%;
+  background-color: pink;
+}
+.basic-info .timeline.data-v-1a9e4efd::before {
+  content: "起";
+  top: -1rpx;
+  background-color: #2a2929;
+}
+.basic-info .timeline.data-v-1a9e4efd::after {
+  content: "止";
+  bottom: -1rpx;
+  background-color: #ef4f3f;
+}
+.basic-info .timeline .line.data-v-1a9e4efd {
+  font-size: 28rpx;
+  color: #818181;
+  margin-top: 40rpx;
+}
+.basic-info .timeline .line.data-v-1a9e4efd:first-child {
+  margin-top: 0;
+}
+.basic-info .timeline .guide.data-v-1a9e4efd {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 24rpx;
+  transform: translateY(-50%);
+}
+.basic-info .timeline .guide .iconfont.data-v-1a9e4efd {
+  margin-bottom: 10rpx;
+  font-size: 40rpx;
+}
+.except-info .panel-title.data-v-1a9e4efd {
+  margin-bottom: 10rpx;
+}
+.except-info .info-list.data-v-1a9e4efd {
+  border-top: none;
+  padding: 0 10rpx 10rpx;
+  margin-top: 0;
+}
+.except-info .info-list.data-v-1a9e4efd:last-child {
+  border-top: 2rpx solid #f4f4f4;
+  padding-top: 10rpx;
+  padding-bottom: 0;
+}
+.pickup-info .panel-title.data-v-1a9e4efd,
+.delivery-info .panel-title.data-v-1a9e4efd {
+  margin-bottom: 20rpx;
+}
+.pickup-info .label.data-v-1a9e4efd,
+.delivery-info .label.data-v-1a9e4efd {
+  font-size: 28rpx;
+  color: #818181;
+}
+.pickup-info .pictures.data-v-1a9e4efd,
+.delivery-info .pictures.data-v-1a9e4efd {
+  min-height: 190rpx;
+  position: relative;
+}
+.pickup-info .picture.data-v-1a9e4efd,
+.delivery-info .picture.data-v-1a9e4efd {
+  width: 190rpx;
+  height: 190rpx;
+  margin: 20rpx 30rpx 20rpx 0;
+  border-radius: 8rpx;
+  background-color: #f4f4f4;
+}
+.pickup-info .picture.data-v-1a9e4efd:nth-child(3n),
+.delivery-info .picture.data-v-1a9e4efd:nth-child(3n) {
+  margin-right: 0;
+}
+.picture-blank.data-v-1a9e4efd {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 201rpx;
+  text-align: center;
+  padding-top: 130rpx;
+  background-image: url(https://sl-driver.oss-cn-hangzhou.aliyuncs.com/images/blank%402x.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-size: 24rpx;
+  color: #818181;
+  transform: translate(-50%, -50%) scale(0.7);
+}
+.toolbar.data-v-1a9e4efd {
+  position: fixed;
+  bottom: 0;
+  height: 140rpx;
+  width: 100%;
+  font-size: 32rpx;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 20rpx 30rpx;
+}
+.toolbar .btn.data-v-1a9e4efd {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.toolbar .button.data-v-1a9e4efd {
+  height: 100rpx;
+  text-align: center;
+  line-height: 100rpx;
+
+
+
+  border-radius: 100rpx;
+  font-size: 36rpx;
+}
+.toolbar .secondary.data-v-1a9e4efd {
+  width: 250rpx;
+  font-size: 32rpx;
+  color: #2a2929;
+  background-color: #e6e6e6;
+}
+.toolbar .primary.data-v-1a9e4efd {
+  width: 400rpx;
+  color: #fff;
+  background-color: #ef4f3f;
+}
+.toolbar .primary.block.data-v-1a9e4efd {
+  width: 690rpx;
+}
+.toolbar .primary[disabled].data-v-1a9e4efd {
+  background-color: #fadcd9;
+}
+.scroll-view-wrapper.data-v-1a9e4efd {
+  overflow: hidden;
+  padding-bottom: 150rpx;
+}

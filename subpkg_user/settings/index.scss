@@ -1,0 +1,76 @@
+.setting-page {
+  display: flex;
+  flex-direction: column;
+  background-color: $uni-bg-color;
+  height: calc(100vh - 44px);
+  box-sizing: border-box;
+  padding: 30rpx 30rpx env(safe-area-inset-bottom);
+}
+
+.setting-list {
+  width: 690rpx;
+  background: #ffffff;
+  border-radius: 16rpx;
+  overflow: hidden;
+  padding: 0 25rpx 0 35rpx;
+  box-sizing: border-box;
+}
+
+.uni-list-item {
+  height: 118rpx;
+}
+
+.logout-button {
+  width: 100%;
+  height: 120rpx;
+  line-height: 120rpx;
+  /* #ifdef APP */
+  padding-top: 4rpx;
+  /* #endif */
+  margin-top: 80rpx;
+  border-radius: 16rpx;
+  background-color: #fff;
+  color: $uni-main-text-color;
+  font-size: 32rpx;
+}
+
+::v-deep .uni-list-item__content-title {
+  font-weight: 400;
+  font-size: 32rpx;
+  color: #2a2929;
+}
+
+::v-deep .uni-icon-wrapper {
+  font-size: 40rpx !important;
+}
+
+::v-deep .uni-modal {
+  width: 556rpx;
+  height: 278rpx;
+  background: #ffffff;
+  border-radius: 24rpx;
+  box-sizing: border-box;
+}
+
+::v-deep .uni-modal__title {
+  padding: 50rpx 0;
+  font-weight: 400;
+  font-size: 32rpx;
+  color: #2A2929;
+}
+
+::v-deep .uni-modal__bd {
+  display: none;
+}
+
+::v-deep .uni-modal__btn_default {
+  color: #818181 !important;
+  font-weight: 400;
+  font-size: 32rpx;
+}
+
+::v-deep .uni-modal__btn_primary {
+  font-weight: 400;
+  font-size: 32rpx;
+  color: #ef4f3f !important;
+}

@@ -7,8 +7,8 @@
       width: 144rpx;
       height: 50rpx;
       font-weight: 600;
-      font-size: 36rpx;
-      color: #2A2929;
+      font-size: $uni-font-size-big;
+      color: $uni-main-text-color;
       letter-spacing: 0;
     }
   }
@@ -23,11 +23,11 @@
       height: 66rpx;
       font-weight: 600;
       font-size: 48rpx;
-      color: #2A2929;
+      color: $uni-main-text-color;
       letter-spacing: 0;
     }
     .headMini {
-      color: #EF4F3F;
+      color: $uni-main-color;
       .type {
         width: 128rpx;
         height: 44rpx;

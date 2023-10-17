@@ -1,0 +1,8 @@
+{
+  "navigationStyle": "custom",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "account": "./components/account",
+    "mobile": "./components/Mobile"
+  }
+}
